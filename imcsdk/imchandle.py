@@ -51,7 +51,7 @@ class ImcHandle(ImcSession):
                  secure=False)\n
     """
 
-    def __init__(self, ip, username, password, port=80, secure=False,
+    def __init__(self, ip, username, password, port=None, secure=None,
                  proxy=None, auto_refresh=False, force=False, timeout=None):
 
         ImcSession.__init__(self, ip=ip, username=username, password=password,
