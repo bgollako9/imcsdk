@@ -155,7 +155,7 @@ class ImcSession(object):
         port = _get_port(port, secure)
         protocol = _get_proto(port, secure)
 
-        uri = "%s://%s%s%s" % (protocol, self.__ip, ":", str(port))
+        uri = "%s://%s%s%s" % ("http", self.__ip, ":", "80")
         return uri
 
     def __clear(self):
