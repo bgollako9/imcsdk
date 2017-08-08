@@ -82,6 +82,7 @@ def from_xml_str(xml_str, handle=None):
         root_element = extract_root_elem(xml_str)\n
     """
 
+    print(xml_str)
     root_elem = ET.fromstring(xml_str)
     if root_elem.tag == "error":
         error_code = root_elem.attrib['errorCode']
